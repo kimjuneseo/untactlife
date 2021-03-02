@@ -1,5 +1,5 @@
 * {margin: 0; padding: 0; color: black; list-style: none; text-decoration: none;}
-body{ background: rgba(255, 255, 255, 0.8); }
+body{ background: rgba(255, 255, 255, 0.8); width: 1200px; margin: 0 auto;}
 img{vertical-align: middle;}
 
 
@@ -15,8 +15,9 @@ img{vertical-align: middle;}
 .sub_menu>li {height: 0px; transition: .3s; overflow: hidden;}
 .sub_menu2>li {height: 0px;}
 
-/* section */
-section{width: 1200px; height: 800px; margin-top: 200px; margin-left: 200px;}
-section img{ width: 500px; height: 400px;  float: left; padding: 10px;} 
+/* content */
+.content{margin-top: 200px;}
+.content>li{width: 400px; height: 50px;  border-bottom: 1px solid black; position: relative; margin-top: 10px;}
+.content>li span{margin-right: 20px;}
 /* footer */      
-footer{border-top: 1px solid black; width:1200px; height:60px; position:absolute; left: 50%; right: 0;  bottom:0; text-align: center; color: white; ; margin-left: -600px;}
+footer{border-top: 1px solid black; width:1200px; height:60px; position:relative; left: 50%; bottom:0; text-align: center; color: white;  margin-left: -600px; z-index: 10; margin-top: 70px;}

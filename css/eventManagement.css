@@ -1,0 +1,26 @@
+* {margin: 0; padding: 0; color: black; list-style: none; text-decoration: none;}
+body{overflow: hidden; background: rgba(255, 255, 255, 0.8);}
+img{vertical-align: middle;}
+
+
+/* header */
+.header {display: flex; justify-content: space-around; left: 0; right: 0; top: 0; bottom: 0; width: 1200px; height: 20%; position: fixed; text-align: center; margin: 0 auto;}
+.sign{height: 16px; width: 200px; }
+.sign>li{float: left;}
+.sign>li:nth-child(2)::before{content:"|";}
+.logo{float: left;}
+.menu{margin-top: 100px; }
+.menu>li {width: 140px; float: left; height: 50px; border-top: 1px solid black; }
+.menu>li:hover .sub_menu>li {height: 30px;border-bottom: 1px solid black;text-decoration: double; opacity: 1;}
+.sub_menu>li a:hover{color: #289AFF;}
+.sub_menu>li {height: 0px; transition: .3s;  position: relative; opacity: 0;}
+/* .DoubleDropdown */
+.myPage{position: relative;}
+.DoubleDropdown{position: absolute; left: 100%; top: 0;}
+.DoubleDropdown>li{width: 200px; height: 50px;  color: #000; display: none; border-bottom: 1px solid black; text-align: center;}
+.myPage:hover .DoubleDropdown>li{display: block; transition: .3s;}      
+
+.videoContnet{width: 45%; height: 700px; position: relative; margin: 0 auto; left: 30%; margin-top: 50px;}
+
+/* footer */      
+footer{border-top: 1px solid black; width:1200px; height:60px; position:relative; left: 50%; bottom:0; text-align: center; color: white;  margin-left: -600px; z-index: 10; margin-top: 70px;}

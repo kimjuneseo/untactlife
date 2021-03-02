@@ -38,7 +38,7 @@ window.onload = function() {
     //inspection
     function inspection(){
         const reg = new RegExp(/[a-zA-Z0-9]*@[a-zA-z]*\.[a-zA-Z]{2,3}/);
-        const rrt = new RegExp(/[])
+    
         if(loginPopupForm.children[2].value.match(reg) === null){
             alert("이메일형식 틀렸습니다.");       
             return false;
