@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" co ntent="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo"><a href="/main.html"><img src="/img/logo2.png" alt="logo" class="logo"></a></div>
+            <ul class="menu">
+                <li class="aboutUs"><a href="/aboutUs.html"> About Us</a>
+                    <ul class="sub_menu">
+                        <li><a href="./aboutUs.html">언택트라이프 소개</a></li>
+                    </ul>
+                </li>
+                <li class="event"><a href="/eventList.html"> 이벤트</a>
+                    <ul class="sub_menu">
+                        <li><a href="/eventList.html"> 이벤트리스트 </a></li>
+                        <li><a href="/eventList.html"> 상세보기</a></li>
+                    </ul>
+
+                </li>
+                <li class="member"><a href="#"> 회원</a>
+                    <ul class="sub_menu">
+                        <li><a href="#"> 회원가입</a></li>
+                        <li><a href="#"> 로그인/로그아웃</a></li>
+                        <li><a href="/mypage.html"> 마이페이지</a></li>
+                    </ul>
+                </li>
+                <li class="manager"><a href="#">관리자</a>
+                    <ul class="sub_menu">
+                        <li><a href="#"> 회원관리</a></li>
+                        <li><a href="#"> 이벤트관리</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+            <ul class="sign">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="popup display-none" id="popup">
+        <div class="popupDiv">
+            <div class="photo">
+                <img src="/img/logo2.png" alt="">
+            </div>
+            <p class="line"></p>
+            <form action="">
+                <p class="loginLine"> 로그인</p>
+                <p> 이메일</p>
+                <input type="text" class="email">
+                <p>비빌번호</p>
+                <input type="text" class="pass">
+                <div class="btns">
+                    <button type="submit" class="loginButton">
+                        <p> 로그인</p>
+                    </button>
+                    <button class="cancel" type="button">
+                        <p> 취소</p>
+                    </button>
+                    <button class="signUp" type="button">
+                        <p>회원가입</p>
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="popup2 display-none" id="popup2">
+        <div class="popupDiv">
+            <div>
+                <div class="photo">
+                    <img src="/img/logo2.png" alt="">
+                </div>
+                <p class="line"></p>
+                <form action="">
+                    <p class="loginLine">회원가입</p>
+                    <p> 이메일</p>
+                    <input type="text" class="email">
+                    <p>비빌번호</p>
+                    <input type="text" class="pass">
+                    <p>비빌번호 확인</p>
+                    <input type="text" class="pass">
+                </form>
+                <div class="btns">
+                    <button class="loginButton" type="button">
+                        <p> 확인</p>
+                    </button>
+                    <button class="cancel" type="button">
+                        <p> 취소</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="slide">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="btns">
+            <button class="slideCansle">stop</button>
+            <button class="slideGo">go</button>
+            <button class="next">&#10094;</button>
+            <button class="backWards">&#10095;</button>
+        </div>
+        <div class="side_content">
+            <p>new event</p>
+            <ul class="evnt">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="side_content2">
+            <p>best event</p>
+            <ul class="evnt">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div class="comments">
+            <p>comments</p>
+            <ul>
+                <li>우와 너무 멋져요</li>
+                <li>우와 너무 멋져요</li>
+                <li>우와 너무 멋져요</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p>Copyright(C) 2020. 언택트라이프. All rights reserved.</p>
+            <img src="/img/facebook.png" alt="facebook">
+            <img src="/img/you-tube.png" alt="you-tub">
+            <img src="/img/twitter.png" alt="twitter">
+        </div>
+    </footer>
+</body>
+
+</html>
