@@ -10,8 +10,10 @@ img{vertical-align: middle;}
 .sign>li:nth-child(2)::before{content:"|";}
 .logo{float: left;}
 .menu{margin-top: 100px; }
+.menu a:hover{color: #289AFF;}
 .menu>li {width: 140px; float: left; height: 50px; border-top: 1px solid black; }
 .menu>li:hover .sub_menu>li {height: 30px;border-bottom: 1px solid black;text-decoration: double; opacity: 1;}
+.menu>li:focus .sub_menu>li {height: 30px;border-bottom: 1px solid black;text-decoration: double; opacity: 1;}
 .sub_menu>li a:hover{color: #289AFF;}
 .sub_menu>li {height: 0px; transition: .3s;  position: relative; opacity: 0;}
 
@@ -54,12 +56,12 @@ img{vertical-align: middle;}
 /* content */
 .content{width: 1200px; height: 300px; margin: auto;margin-top: 200px; z-index: 0;}
 /* slide */
-.slide{width: 100%; height: 300px; overflow: hidden; float: right;}
+.slide{width: 100%; height: 300px;  float: right; overflow: hidden;}
 .slide li{height: 300px;}
 .slide li:nth-child(1){background-image: url(../img/silde1.png);}
 .slide li:nth-child(2){background-image: url(../img/silde2.jpg);}
 .slide li:nth-child(3){background-image: url(../img/silde3.jpg);}
-      .slideCansle ,.slideGo,.next,.backWards{border: 1px solid #000; width: 20px; height: 20px; border: 1px solid #fff; border-radius: 50%; background-color: #fff; color: #000;}
+.slideCansle ,.slideGo,.next,.backWards{border: 1px solid #000; width: 20px; height: 20px; border: 1px solid #fff; border-radius: 50%; background-color: #fff; color: #000;}
 
 /* side_content */
 

@@ -23,6 +23,21 @@ img{vertical-align: middle;}
 .pageConut li{float: left; margin-left: 10px;}
 .pageConut li:nth-child(1){border-bottom: 1px solid black;}
 
+/* form */
+#popup2{position: fixed; top: 0; left: 0; bottom: 0; right: 0; background: rgba(0, 0, 0, 0.8);}
+#popup2>div{background: rgba(255, 255, 255, 1); margin: -100px auto; z-index: 10; width: 250px; height: 320px; position: fixed; top: 40%; bottom: 0; left: 0; right: 0; }
+#popup2 input{width: 200px; height: 20px; border: 1px solid black; border-radius: 3px; padding: 5px 12px; margin: 0 10px;}
+#popup2 input:nth-child(2){margin-top: 30px;}
+#popup2 p{text-align: center; font-weight: bold;}
+#popup2 .photo{width: 50px; margin: 0 auto;}
+#popup2 img{width: 100%;}
+#popup2 .line{width: 100%; margin-top: 10px; border: 1px solid rgba(0, 0, 0, 0.7);}
+#popup2 .loginLine{margin-bottom: 20px; margin-top: 10px;}
+#popup2 button{background: rgba(17, 78, 128, 0.507); border: 0.5px solid green; width: 150px; height: 25px; border-radius: 2px; margin: 3px auto;}
+#popup2 button p{color: #fff;}
+#popupDiv{border: 1px solid #fff; border-radius: 10px;}
+#popup2 .btns{display: flex; flex-direction: column;}
+.display-none{display: none;}
 
 /* footer */      
 footer{border-top: 1px solid black; width:1200px; height:60px; position:relative; left: 50%; bottom:0; text-align: center; color: white;  margin-left: -600px; z-index: 10; margin-top: 70px;}
