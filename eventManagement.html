@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/eventManagement.css">
-    <!-- <script src="/js/eventList.js"></script> -->
+    <script src="./js/eventManagement.js"></script>
 </head>
 
 <body>
     <header>
         <div class="header">
-            <div class="logo"><a href="./main.html"><img src="/img/logo2.png" alt="logo" class="logo"></a></div>
+            <div class="logo"><a href="./main.html"><img src="./img/logo2.png" alt="logo" class="logo"></a></div>
             <ul class="menu">
                 <li class="aboutUs"><a href="./aboutUs.html"> About Us</a>
                     <ul class="sub_menu">
@@ -31,30 +31,40 @@
                     <ul class="sub_menu">
                         <li><a href="#"> 회원가입</a></li>
                         <li><a href="#"> 로그인/로그아웃</a></li>
-                        <li><a href="#"> 마이페이지</a></li>
+                        <li class="myPage"><a href="./mypage.html"> 마이페이지</a>
+                        <ul class="DoubleDropdown">
+                            <li><a href="#"> 이벤트 신청내역</a></li>
+                            <li><a href="#"> 댓글 등록 이벤트 내역</a></li>
+                            <li><a href="#"> 내 댓글 모아보기</a></li>
+                        </ul></li>
                     </ul>
                 </li>
                 <li class="manager"><a href="#">관리자</a>
                     <ul class="sub_menu">
-                        <li><a href="#"> 회원관리</a></li>
-                        <li><a href="#"> 이벤트관리</a></li>
+                        <li><a href="./member.html"> 회원관리</a></li>
+                        <li><a href="./eventManagement.html"> 이벤트관리</a></li>
                     </ul>
 
                 </li>
             </ul>
-            <div class="login"><a href="#popup"> 로그인</a>|<a href="#popup2">회원가입</a></div>
+            <ul class="sign">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+            </ul>
         </div>
     </header>
-    <section>
-        <div>
-            <video class="videoContnet" controls src="./video/video1 (1).mp4">
+ 
+    <div class="imgPreview">
+        <input type="file" id="image" accept="image/*" onchange="setThumbnail(event);">
+        <div class="imageContainer"></div>
+    </div>
+<section>
+        <div class="videoContnet">
+            <video class="video" controls src="./video/video1 (1).mp4">
             </video>
-            <div>
-                <a href=#none id="show" onclick="if(hide.style.display=='none')
-                    {hide.style.display='';show.innerText='▲접기'}
-                    else {hide.style.display='none';show.innerText='▶펼치기'}">▶더 보기</a>
-                <div id="hide" style="display: none">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi deserunt beatae ratione fuga alias
+            <div class="textBox">
+                <textarea>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi deserunt beatae ratione fuga alias
                     officiis repudiandae molestiae reiciendis? Officiis facilis molestiae laboriosam possimus voluptate
                     ipsum libero, harum assumenda ipsa impedit!
                     Illo minima ab nostrum veritatis. Quae, dignissimos cumque nisi, ullam ducimus inventore nemo esse
@@ -63,12 +73,10 @@
                     Magni omnis repudiandae reiciendis. Minus voluptatum aut temporibus voluptates maxime cum ex est
                     officia. Facere dolorum beatae ratione vitae cum perferendis nulla qui eum animi id, incidunt
                     corporis vel blanditiis?
-                </div>
+                </p>
+                </textarea>
+                <button>수정</button>
             </div>
-            <form action="">
-                <textarea></textarea>
-                <input type="submit" value="전송">
-            </form>
         </div>
     </section>
     <footer>

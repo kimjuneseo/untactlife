@@ -19,5 +19,10 @@ img{vertical-align: middle;}
 .content{margin-top: 200px;}
 .content>li{width: 400px; height: 50px;  border-bottom: 1px solid black; position: relative; margin-top: 10px;}
 .content>li span{margin-right: 20px;}
+.pageConut{display: block; width: 100px; position: relative; top: 10px; left: 45%;}
+.pageConut li{float: left; margin-left: 10px;}
+.pageConut li:nth-child(1){border-bottom: 1px solid black;}
+
+
 /* footer */      
 footer{border-top: 1px solid black; width:1200px; height:60px; position:relative; left: 50%; bottom:0; text-align: center; color: white;  margin-left: -600px; z-index: 10; margin-top: 70px;}

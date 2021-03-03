@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/member.css">
-    <!-- <script src="/js/eventList.js"></script> -->
+    <script src="./js/memvber.js"></script>
 </head>
 <body>
     <header>
         <div class="header">
-            <div class="logo"><a href="./main.html"><img src="/img/logo2.png" alt="logo" class="logo"></a></div>
+            <div class="logo"><a href="./main.html"><img src="./img/logo2.png" alt="logo" class="logo"></a></div>
             <ul class="menu">
                 <li class="aboutUs"><a href="./aboutUs.html"> About Us</a>
                     <ul class="sub_menu">
@@ -29,18 +29,26 @@
                     <ul class="sub_menu">
                         <li><a href="#"> 회원가입</a></li>
                         <li><a href="#"> 로그인/로그아웃</a></li>
-                        <li><a href="#"> 마이페이지</a></li>
+                        <li class="myPage"><a href="./mypage.html"> 마이페이지</a>
+                        <ul class="DoubleDropdown">
+                            <li><a href="#"> 이벤트 신청내역</a></li>
+                            <li><a href="#"> 댓글 등록 이벤트 내역</a></li>
+                            <li><a href="#"> 내 댓글 모아보기</a></li>
+                        </ul></li>
                     </ul>
                 </li>
                 <li class="manager"><a href="#">관리자</a>
                     <ul class="sub_menu">
-                        <li><a href="#"> 회원관리</a></li>
-                        <li><a href="#"> 이벤트관리</a></li>
+                        <li><a href="./member.html"> 회원관리</a></li>
+                        <li><a href="./eventManagement.html"> 이벤트관리</a></li>
                     </ul>
 
                 </li>
             </ul>
-            <div class="login"><a href="#popup"> 로그인</a>|<a href="#popup2">회원가입</a></div>
+            <ul class="sign">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+            </ul>
         </div>
     </header>
     <section>
@@ -62,6 +70,13 @@
             </ul>
         </div>
     </section>
+    <div class="pageConut">
+        <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+        </ul>
+    </div>
     <footer>
         <div class="footer">
             <p>Copyright(C) 2020. 언택트라이프. All rights reserved.</p>
