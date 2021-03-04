@@ -53,46 +53,46 @@ window.onload = function () {
     joinForm.addEventListener("submit", event => {
         event.preventDefault();
         console.log(joinInput.children[1])
-        if(joinInput[0].value === "") {
+        if (joinForm.children[2].value === "") {
             alert("이름을 입력해주세요");
-    
+
             return false;
         };
-    
+
         const regExp = new RegExp(/[A-Za-z0-9]*@[A-Za-z]*\.[a-zA-Z]{2,3}/);
-        if(joinInput.children[1].value.match(regExp) === null) {
+        if (joinForm.children[4].value.match(regExp) === null) {
             alert("이메일 형식이 일치하지 않습니다");
-    
+
             return false;
         };
-    
+
         const regExp2 = new RegExp(/[~!@#$%^&*()_+|<>?:{}]/g);
-        if(joinInput.children[2].value.match(regExp2)) {
+        if (joinForm.children[6].value.match(regExp2)) {
             alert("비밀번호에 특수문자는 입력할 수 없습니다");
-    
+
             return false;
         };
-        if(joinInput.children[2].value.match(new RegExp(/[A-Z]/g)) === null) {
+        if (joinForm.children[6].value.match(new RegExp(/[A-Z]/g)) === null) {
             alert("비밀번호에 대문자를 한개 이상 포함해주세요");
-    
+
             return false;
         };
-        if(joinInput.children[2].value.match(new RegExp(/[0-9]/g)) === null) {
+        if (joinForm.children[6].value.match(new RegExp(/[0-9]/g)) === null) {
             alert("비밀번호에 숫자를 한개 이상 포함해주세요");
-    
+
             return false;
         };
-    
-        if(joinInput.children[2].value !== joinInput.children[3].value){
+
+        if (joinForm.children[8].value !== joinForm.children[3].value) {
             alert("비밀번호가 다릅니다.")
-    
+
             return false;
         }
-    
+
         alert("회원가입 되었습니다");
-        joinInput.children.reset();
+        joinForm.children.reset();
     });
-    
+
     // slide
     let count = 1
     function slide() {
